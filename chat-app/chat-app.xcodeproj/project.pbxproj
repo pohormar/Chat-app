@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51DF554F5EC3DE392AE133C7 /* Pods_chat_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6E18CF146B7F9CAD3EC609 /* Pods_chat_app.framework */; };
+		6F29276F1F54BCAF00F953DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F29276E1F54BCAF00F953DF /* Constants.swift */; };
 		6F4682E41F52E5CC00743F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4682E31F52E5CC00743F30 /* AppDelegate.swift */; };
 		6F4682E91F52E5CC00743F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4682E71F52E5CC00743F30 /* Main.storyboard */; };
 		6F4682EB1F52E5CC00743F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4682EA1F52E5CC00743F30 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		11B5B45445FC8A2B917B8CCE /* Pods-chat-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-chat-app/Pods-chat-app.release.xcconfig"; sourceTree = "<group>"; };
+		6F29276E1F54BCAF00F953DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6F4682E01F52E5CC00743F30 /* chat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4682E31F52E5CC00743F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F4682E81F52E5CC00743F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6F29276D1F54BC7D00F953DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6F29276E1F54BCAF00F953DF /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		6F4682D71F52E5CC00743F30 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		6F4682E21F52E5CC00743F30 /* chat-app */ = {
 			isa = PBXGroup;
 			children = (
+				6F29276D1F54BC7D00F953DF /* Utilities */,
 				6F4DFEE31F531DA700304554 /* Model */,
 				6F4DFEE21F531D9F00304554 /* View */,
 				6F4DFEE11F531D9200304554 /* Controller */,
@@ -262,6 +273,7 @@
 				6F4DFEEA1F532F4700304554 /* GradientView.swift in Sources */,
 				6F4682E41F52E5CC00743F30 /* AppDelegate.swift in Sources */,
 				6F4DFEE81F53266C00304554 /* SWRevealViewController.m in Sources */,
+				6F29276F1F54BCAF00F953DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
