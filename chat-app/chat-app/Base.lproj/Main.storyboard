@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -158,7 +158,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#general" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9um-fR-E4y">
-                                                    <rect key="frame" x="28" y="12" width="66" height="20"/>
+                                                    <rect key="frame" x="35" y="12" width="66" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -243,7 +243,7 @@
                                     <action selector="closePressed:" destination="3Nq-mh-CzS" eventType="touchUpInside" id="52z-T7-Ivh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1C-Eo-hM6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1C-Eo-hM6" customClass="RoundedButton" customModule="chat_app" customModuleProvider="target">
                                 <rect key="frame" x="63" y="266" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.27058823529411763" green="0.76862745098039209" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -254,6 +254,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-6G-JV7">
                                 <rect key="frame" x="62.5" y="140" width="250" height="86"/>
@@ -342,7 +347,7 @@
                                     <action selector="closePressed:" destination="3Nq-mh-CzS" eventType="touchUpInside" id="TK5-Rq-PCi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XQ-Nw-cYJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XQ-Nw-cYJ" customClass="RoundedButton" customModule="chat_app" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.27058823529999998" green="0.76862745099999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -353,6 +358,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccoutPressed:" destination="jJE-ph-iFG" eventType="touchUpInside" id="MKP-gf-K0C"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Gb6-kS-gpW">
                                 <rect key="frame" x="62.5" y="120.5" width="250" height="136"/>
@@ -364,7 +377,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.27058823529999998" green="0.16460503470000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-cY-Mat">
                                         <rect key="frame" x="0.0" y="34" width="250" height="2"/>
@@ -430,6 +443,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Choose avatar"/>
+                                <connections>
+                                    <action selector="pickAvatarPressed:" destination="jJE-ph-iFG" eventType="touchUpInside" id="lCk-Af-xGh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-4n-B66">
                                 <rect key="frame" x="87.5" y="440" width="200" height="30"/>
@@ -439,6 +455,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Generate background color"/>
+                                <connections>
+                                    <action selector="pickBGColorPressed:" destination="jJE-ph-iFG" eventType="touchUpInside" id="uo3-9h-uNx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -462,6 +481,10 @@
                         <viewLayoutGuide key="safeArea" id="hlM-wf-8M5"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="z8U-iz-SKj" id="wjW-zQ-mYd"/>
+                        <outlet property="passwordTxt" destination="2Gm-ea-RbC" id="vOF-rG-YgG"/>
+                        <outlet property="userImg" destination="Wzt-WQ-ZgS" id="oa0-U2-49O"/>
+                        <outlet property="userNameTxt" destination="KvI-kH-CwD" id="wCp-Ox-lba"/>
                         <segue destination="Hgl-QR-Mxo" kind="unwind" identifier="undwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="NW8-c4-9gN"/>
                     </connections>
                 </viewController>

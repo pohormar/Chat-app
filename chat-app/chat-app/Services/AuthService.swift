@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 class AuthService {
-    static let uthService = AuthService()
+    static let instance = AuthService()
     let defaults = UserDefaults.standard
     var isLoggedIn: Bool {
         get {
@@ -42,12 +42,18 @@ class AuthService {
     
     func registerUser (email: String, password: String, completion: @escaping CompletionHandler){
         let lowerCaseEmail = email.lowercased()
+        
         let header = ["Content-type":"application/json; charset=UTF-8"]
+        
         let body: [String:Any] = ["email": lowerCaseEmail,
                                   "password": password]
+        
         Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
-            if response.result.error == nil{completion(true)} else {completion(false)
+            if response.result.error == nil {
+                completion(true)}
+            else {
+                completion(false)
                 debugPrint(response.result.error as Any)
-            }        }
+            }}
     }
 }
