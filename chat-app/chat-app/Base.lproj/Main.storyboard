@@ -509,10 +509,10 @@
                                     <action selector="backPressed:" destination="abZ-kC-WP3" eventType="touchUpInside" id="bTj-E1-X2L"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="945-DN-a83">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="945-DN-a83">
                                 <rect key="frame" x="107" y="28" width="160" height="28"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-Tr-xwU">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-Tr-xwU">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="a3n-Xk-spE"/>
@@ -527,6 +527,9 @@
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="rPc-Tr-xwU" firstAttribute="centerX" secondItem="945-DN-a83" secondAttribute="centerX" id="GyD-No-Ngm"/>
+                                </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1B9-xV-9Gd">
                                 <rect key="frame" x="0.0" y="76" width="375" height="591"/>
@@ -570,6 +573,7 @@
                             <constraint firstItem="1B9-xV-9Gd" firstAttribute="top" secondItem="WDB-Zl-0R9" secondAttribute="bottom" constant="20" id="PcM-j0-d7H"/>
                             <constraint firstItem="1B9-xV-9Gd" firstAttribute="trailing" secondItem="M4D-F5-KYX" secondAttribute="trailing" id="Pii-eF-nXh"/>
                             <constraint firstItem="1B9-xV-9Gd" firstAttribute="leading" secondItem="M4D-F5-KYX" secondAttribute="leading" id="gNJ-ua-tWG"/>
+                            <constraint firstItem="rPc-Tr-xwU" firstAttribute="top" secondItem="M4D-F5-KYX" secondAttribute="top" constant="8" id="tI8-BM-aWQ"/>
                             <constraint firstItem="945-DN-a83" firstAttribute="centerX" secondItem="SJQ-cj-pVo" secondAttribute="centerX" id="xqg-OV-AEh"/>
                             <constraint firstItem="WDB-Zl-0R9" firstAttribute="leading" secondItem="M4D-F5-KYX" secondAttribute="leading" constant="10" id="zQ0-Hn-Bpr"/>
                         </constraints>
