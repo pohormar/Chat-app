@@ -19,6 +19,8 @@ let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataDidChange")
+
 //let BASE_URL = "https://chtappchat.herokuapp.com/v1/"
 let BASE_URL = "http://localhost:3005/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
